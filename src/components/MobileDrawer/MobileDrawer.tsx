@@ -1,9 +1,9 @@
-import { Anchor, Box, Drawer, Image, Stack } from '@mantine/core'
+import { Anchor, Box, Drawer, Group, Image, Stack } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 
-import Text from '../common/Text'
-import menuIcon from '/src/assets/images/menu.png'
+import StyledText from '../common/StyledText'
 import Button from '../common/Button'
+import menuIcon from '/src/assets/images/menu.png'
 import logo from '/src/assets/svg/logo.svg'
 import { navigation } from '../common/navLinksData'
 
@@ -37,7 +37,7 @@ export default function MobileDrawer() {
             '&:focus': { outline: 'none' },
           },
           content: {
-            background: 'linear-gradient(#161727, #020516)',
+            background: 'linear-gradient( #161727, #020516, #2d3051)',
           },
         }}
       >
@@ -47,21 +47,22 @@ export default function MobileDrawer() {
 
         <Stack spacing={30} p={30}>
           {navigation.map(({ href, text }) => (
-            <Anchor
-              key={text}
-              href={href}
-              c="#fff"
-              underline={false}
-              onClick={close}
-            >
-              <Text styled> {text}</Text>
-            </Anchor>
+            <Group key={text} spacing="2rem">
+              <Box
+                w={15}
+                h={15}
+                bg="#bbb"
+                sx={{ clipPath: 'polygon(0% 0%, 100% 50%, 0% 100%)' }}
+              />
+              <Anchor href={href} c="#fff" underline={false} onClick={close}>
+                <StyledText> {text}</StyledText>
+              </Anchor>
+            </Group>
           ))}
 
           <Box my={15} h={1} bg="#fff" />
 
           <Button href="#contactwithus" onClick={close}>
-            {' '}
             Contact with us
           </Button>
         </Stack>
