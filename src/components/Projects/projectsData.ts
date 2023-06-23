@@ -11,7 +11,10 @@ import proj10 from '/src/assets/images/proj10-500.jpg'
 import proj11 from '/src/assets/images/proj11-500.jpg'
 import proj12 from '/src/assets/images/proj12-500.jpg'
 
-export const projectsData = [
+export const projectsData: {
+  img: string
+  href: string
+}[][] = [
   [
     { img: proj1, href: '#projects' },
     { img: proj2, href: '#projects' },
