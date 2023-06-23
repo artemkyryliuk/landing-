@@ -1,6 +1,7 @@
-import { Flex, Title } from '@mantine/core'
+import { Flex } from '@mantine/core'
 
-import Text from '../../common/Text'
+import TitleH2 from '../../common/TitleH2'
+import StyledText from '../../common/StyledText'
 import Link from '../../common/Link'
 
 export default function StatsCard({
@@ -28,12 +29,10 @@ export default function StatsCard({
           textShadow: '0px 0px 10px #ffffffcc',
         }}
       >
-        <Title order={2} mt="-0.2rem" size="2.5rem" fw={300}>
-          {stat}
-        </Title>
+        <TitleH2 mt="-0.2rem">{stat}</TitleH2>
       </Flex>
 
-      <Text styled> {text} </Text>
+      <StyledText> {text} </StyledText>
 
       <Link href={href}> {source} </Link>
     </Flex>

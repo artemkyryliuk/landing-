@@ -2,7 +2,6 @@ import { Box, Flex, Container, SimpleGrid, Stack } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 
 import Text from '../common/Text'
-
 import TitleH2 from '../common/TitleH2'
 import DescriptionText from '../common/DescriptionText'
 import Button from '../common/Button'

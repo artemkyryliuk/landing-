@@ -1,17 +1,17 @@
 import { Container } from '@mantine/core'
 
-import Title from '../../common/TitleH3'
-import Text from '../../common/Text'
+import TitleH2 from '../../common/TitleH2'
+import DescriptionText from '../../common/DescriptionText'
 import StyledCarousel from './Carousel'
 
 export default function CustomerTransformations() {
   return (
     <Container fluid p={0} py={50}>
-      <Title isCentered> Customer transformations </Title>
+      <TitleH2> Customer transformations </TitleH2>
 
-      <Text isDescription mt={25} ta="center">
+      <DescriptionText mt={25} ta="center">
         Innovate. Optimise. Grow.
-      </Text>
+      </DescriptionText>
 
       <StyledCarousel />
     </Container>

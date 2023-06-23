@@ -1,6 +1,7 @@
 import { Anchor, Container, Stack, Title } from '@mantine/core'
 
-import Text from '../../common/Text'
+import StyledText from '../../common/StyledText'
+import DescriptionText from '../../common/DescriptionText'
 
 export default function Slide({
   slide: { img, label, text, href, source },
@@ -15,7 +16,7 @@ export default function Slide({
 }) {
   return (
     <Container p={0} sx={{ borderRadius: '1rem', overflow: 'hidden' }}>
-      <img src={img} />
+      <img src={img} width="100%" />
 
       <Title
         order={3}
@@ -37,14 +38,14 @@ export default function Slide({
       </Title>
 
       <Stack p={20} align="flex-start" bg="#000" fz="1.2rem">
-        <Text styled> {text} </Text>
+        <StyledText> {text} </StyledText>
 
         {href ? (
           <Anchor href={href} target="_blank" c="#F5B041">
             {source}
           </Anchor>
         ) : (
-          <Text isDescription> {source} </Text>
+          <DescriptionText> {source} </DescriptionText>
         )}
       </Stack>
     </Container>

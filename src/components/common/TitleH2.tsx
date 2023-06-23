@@ -1,9 +1,9 @@
-import { SystemProp, Title as MTitle } from '@mantine/core'
+import { SystemProp, Title } from '@mantine/core'
 
 export default function TitleH2({
   c = 'inherit',
   mt,
-  ta,
+  ta = 'center',
   children,
 }: {
   c?: string
@@ -12,8 +12,8 @@ export default function TitleH2({
   children: React.ReactNode
 }) {
   return (
-    <MTitle order={2} mt={mt} ta={ta} c={c} fz="2.6rem" fw={300}>
+    <Title order={2} mt={mt} ta={ta} c={c} fz="2.6rem" fw={300}>
       {children}
-    </MTitle>
+    </Title>
   )
 }

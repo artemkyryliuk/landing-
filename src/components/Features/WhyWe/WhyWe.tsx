@@ -1,10 +1,10 @@
-import { Flex, Image } from '@mantine/core'
+import { Flex, Image, Stack } from '@mantine/core'
 
-import FeatureItem from '../../common/FeatureItem'
 import StarIcon from './StarIcon'
 import bg from '/src/assets/images/feat.jpg'
+import TitleH2 from '../../common/TitleH2'
+import StyledText from '../../common/StyledText'
 import { whyWe } from './why-we'
-import Title from '../../common/TitleH3'
 
 export default function WhyWe() {
   return (
@@ -14,18 +14,20 @@ export default function WhyWe() {
         [theme.fn.smallerThan('md')]: { flexDirection: 'column-reverse' },
       })}
     >
-      <Flex
-        direction="column"
-        gap={25}
+      <Stack
+        spacing={50}
         maw="45%"
         sx={(theme) => ({ [theme.fn.smallerThan('md')]: { maxWidth: '100%' } })}
       >
-        <Title> We'll take care of the UX so you can grow faster. </Title>
+        <TitleH2> We'll take care of the UX so you can grow faster. </TitleH2>
 
         {whyWe.map((item) => (
-          <FeatureItem key={item} styled icon={<StarIcon />} text={item} />
+          <Flex key={item} gap={20} align="baseline">
+            <StarIcon />
+            <StyledText> {item} </StyledText>
+          </Flex>
         ))}
-      </Flex>
+      </Stack>
 
       <Image
         src={bg}

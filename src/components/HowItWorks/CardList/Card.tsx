@@ -1,9 +1,9 @@
-import { Container, SimpleGrid } from '@mantine/core'
+import { Box, Flex, SimpleGrid, Stack } from '@mantine/core'
 
-import Title from '../../common/TitleH3'
-import Text from '../../common/Text'
-import FeatureItem from '../../common/FeatureItem'
+import TitleH3 from '../../common/TitleH3'
+import DescriptionText from '../../common/DescriptionText'
 import CheckIcon from '../../common/CheckIcon'
+import StyledText from '../../common/StyledText'
 
 export default function Card({
   card: { img, title, text, items },
@@ -21,20 +21,24 @@ export default function Card({
       spacing={35}
       breakpoints={[{ maxWidth: 'md', cols: 1 }]}
       maw={960}
+      sx={{ alignItems: 'center' }}
     >
-      <img src={img} style={{ borderRadius: '0.8rem' }} />
+      <img src={img} width="100%" style={{ borderRadius: '0.8rem' }} />
 
-      <Container p={0} maw={550}>
-        <Title isSmall> {title} </Title>
+      <Stack maw={550}>
+        <TitleH3 ta="start"> {title} </TitleH3>
 
-        <Text isDescription mt={25} mb={25}>
-          {text}
-        </Text>
+        <DescriptionText>{text}</DescriptionText>
 
-        {items.map((item) => (
-          <FeatureItem key={item} icon={<CheckIcon />} text={item} />
-        ))}
-      </Container>
+        <Box>
+          {items.map((item) => (
+            <Flex key={item} gap={20} align="baseline">
+              <CheckIcon />
+              <StyledText> {item} </StyledText>
+            </Flex>
+          ))}
+        </Box>
+      </Stack>
     </SimpleGrid>
   )
 }

@@ -3,7 +3,7 @@ import { SystemProp, Title as MTitle } from '@mantine/core'
 export default function TitleH3({
   c = 'inherit',
   mt,
-  ta,
+  ta = 'center',
   children,
 }: {
   c?: string
