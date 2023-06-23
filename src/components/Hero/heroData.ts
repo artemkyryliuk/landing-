@@ -5,7 +5,7 @@ import hero4 from '/src/assets/svg/hero4.svg'
 import hero5 from '/src/assets/svg/hero5.svg'
 import hero6 from '/src/assets/svg/hero6.svg'
 
-export const heroData = [
+export const heroData: { src: string; text: string }[] = [
   { src: hero1, text: `Modular design system approach` },
   { src: hero2, text: `Async comms & walkthroughs` },
   { src: hero3, text: `Unlimited eye-tracking` },
