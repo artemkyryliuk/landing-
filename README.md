@@ -3,7 +3,7 @@
 ### Built With
 
 [![React][React.js]][React-url]
-[![Typescipt][Typescript]][Typescript-ur]
+[![Typescipt][Typescript]][Typescript-url]
 [![Mantine UI][Mantine UI]][Mantine-url]
 
 ### Prerequisites
