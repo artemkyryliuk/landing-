@@ -1,9 +1,9 @@
 import { Box } from '@mantine/core'
 
 import SectionTitle from '../common/SectionTitle'
-import Title from '../common/TitleH3'
-import projectsBg1 from '../../assets/images/projects-bg1.jpg'
+import TitleH2 from '../common/TitleH2'
 import ProjectsGrid from './ProjectsGrid/ProjectsGrid'
+import projectsBg1 from '../../assets/images/projects-bg1.jpg'
 import projectsBg2 from '../../assets/images/projects-bg2.jpg'
 import projectsBg3 from '../../assets/images/projects-bg3.jpg'
 import projectsBg4 from '../../assets/images/projects-bg4.jpg'
@@ -27,9 +27,7 @@ export default function Projects() {
         <Box mx="auto" maw={1280}>
           <SectionTitle> Projects </SectionTitle>
 
-          <Title mt={50} isCentered>
-            Projects we have done. Get inspired
-          </Title>
+          <TitleH2 mt={50}> Projects we have done. Get inspired </TitleH2>
         </Box>
       </Box>
 

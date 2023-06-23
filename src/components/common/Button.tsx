@@ -3,17 +3,17 @@ import { Anchor, Button as MButton } from '@mantine/core'
 export default function Button({
   href,
   type,
-  fullWidth,
   hideOnMobile,
   mt,
+  w,
   onClick,
   children,
 }: {
   href?: string
   type?: 'submit' | 'button' | 'reset'
-  fullWidth?: boolean
   hideOnMobile?: boolean
   mt?: string
+  w?: string | number
   onClick?: () => void
   children: React.ReactNode
 }) {
@@ -24,7 +24,7 @@ export default function Button({
         mt={mt}
         px="0.8rem"
         py="0.4rem"
-        w={fullWidth ? '100%' : 'auto'}
+        w={w}
         c="#fff"
         variant="gradient"
         gradient={{ from: '#3158d2', to: '#21618C', deg: 60 }}

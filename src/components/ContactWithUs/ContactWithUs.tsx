@@ -1,7 +1,7 @@
 import { Box } from '@mantine/core'
 
-import Title from '../common/TitleH3'
 import SectionTitle from '../common/SectionTitle'
+import TitleH2 from '../common/TitleH2'
 import ContactForm from './ContactForm'
 import contactBg from '/src/assets/images/contact-bg.jpg'
 
@@ -22,9 +22,7 @@ export default function ContactWithUs() {
       <Box mx="auto" maw={1280}>
         <SectionTitle> Contact with us </SectionTitle>
 
-        <Title isCentered mt={25}>
-          Leave your contacts for feedback
-        </Title>
+        <TitleH2 mt={25}>Leave your contacts for feedback</TitleH2>
 
         <ContactForm />
       </Box>

@@ -1,9 +1,10 @@
 import { Box, Container, Flex, Text as MText } from '@mantine/core'
 
-import Title from '../../common/TitleH3'
-import FeatureItem from '../../common/FeatureItem'
+import TitleH3 from '../../common/TitleH3'
+import StyledText from '../../common/StyledText'
 import CheckIcon from '../../common/CheckIcon'
 import Text from '../../common/Text'
+import DescriptionText from '../../common/DescriptionText'
 import Button from '../../common/Button'
 
 export default function SubscriptionBlock({
@@ -42,29 +43,32 @@ export default function SubscriptionBlock({
             </MText>
           )}
         </Flex>
-        <Title isSmall mt={10}>
+        <TitleH3 mt={10} ta="start">
           {name}
-        </Title>
+        </TitleH3>
       </Box>
 
       <Box>
-        <Text isDescription mt={20} mb={30} mih={90}>
+        <StyledText mt={20} mb={30} mih={90}>
           {description}
-        </Text>
+        </StyledText>
 
         {[
           items.map((item) => (
-            <FeatureItem key={item} icon={<CheckIcon />} text={item} />
+            <Flex key={item} gap={20} align="baseline">
+              <CheckIcon />
+              <Text>{item}</Text>
+            </Flex>
           )),
         ]}
 
         <Flex gap="0.5rem" mt={30} mb={30}>
-          <Text isDescription> GBP </Text>
+          <DescriptionText> GBP </DescriptionText>
 
           <Text> {`£${price.toLocaleString('en-UK')} per week`} </Text>
         </Flex>
 
-        <Button fullWidth> Subscribe </Button>
+        <Button w="100%"> Subscribe </Button>
       </Box>
     </Container>
   )

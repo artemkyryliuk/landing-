@@ -16,7 +16,11 @@ export default function ProjectsGrid({
       py={100}
       bg={`url(${bg}) fixed center`}
       sx={(theme) => ({
-        [theme.fn.smallerThan('lg')]: { backgroundAttachment: 'inherit' },
+        '@media (pointer: coarse)': {
+          [theme.fn.smallerThan('lg')]: {
+            backgroundAttachment: 'inherit',
+          },
+        },
       })}
     >
       <SimpleGrid

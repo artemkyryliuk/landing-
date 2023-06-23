@@ -58,7 +58,7 @@ export default function Hero() {
         </Container>
 
         <Stack spacing={40} maw={450}>
-          <TitleH2>
+          <TitleH2 ta="start">
             The only product design subscription to level up your UX + UI.
           </TitleH2>
 
@@ -67,7 +67,9 @@ export default function Hero() {
             goodies you won't find anywhere else.
           </DescriptionText>
 
-          <Button href="#features"> Why we? </Button>
+          <Button href="#features" w={150}>
+            Why we?
+          </Button>
         </Stack>
       </Flex>
     </Box>

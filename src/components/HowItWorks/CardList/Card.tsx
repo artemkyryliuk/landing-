@@ -3,7 +3,7 @@ import { Box, Flex, SimpleGrid, Stack } from '@mantine/core'
 import TitleH3 from '../../common/TitleH3'
 import DescriptionText from '../../common/DescriptionText'
 import CheckIcon from '../../common/CheckIcon'
-import StyledText from '../../common/StyledText'
+import Text from '../../common/Text'
 
 export default function Card({
   card: { img, title, text, items },
@@ -34,7 +34,7 @@ export default function Card({
           {items.map((item) => (
             <Flex key={item} gap={20} align="baseline">
               <CheckIcon />
-              <StyledText> {item} </StyledText>
+              <Text> {item} </Text>
             </Flex>
           ))}
         </Box>

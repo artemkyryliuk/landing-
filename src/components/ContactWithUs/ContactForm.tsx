@@ -8,7 +8,7 @@ import {
   TextInput,
 } from '@mantine/core'
 
-import Title from '../common/TitleH3'
+import TitleH3 from '../common/TitleH3'
 
 export default function ContactForm() {
   const commonProps = {
@@ -16,23 +16,19 @@ export default function ContactForm() {
     withAsterisk: true,
   }
 
-  const accentColor = '#5072a5'
-  const backgroundColor = '#eee'
-  const fontSize = '1rem'
-
   return (
     <Box
       mt={50}
       mx="auto"
       maw={700}
-      bg="#fff"
+      bg="#ffffff88"
       sx={{ borderRadius: 10, overflow: 'hidden' }}
     >
-      <Box h={10} bg={accentColor} />
+      <Box h={10} bg="#5072a5" />
 
-      <Title isSmall isCentered mt={50} c={accentColor}>
+      <TitleH3 mt={50} c="#5072a5">
         Contact form
-      </Title>
+      </TitleH3>
 
       <form onSubmit={(e) => e.preventDefault()}>
         <Flex
@@ -56,8 +52,8 @@ export default function ContactForm() {
               type="text"
               label="Your name"
               styles={{
-                input: { backgroundColor, fontSize },
-                label: { fontSize },
+                input: { fontSize: '1rem' },
+                label: { fontSize: '1rem' },
               }}
               {...commonProps}
             />
@@ -66,8 +62,8 @@ export default function ContactForm() {
               type="email"
               label="Your email"
               styles={{
-                input: { backgroundColor, fontSize },
-                label: { fontSize },
+                input: { fontSize: '1rem' },
+                label: { fontSize: '1rem' },
               }}
               {...commonProps}
             />
@@ -77,16 +73,15 @@ export default function ContactForm() {
               data={['Question', 'Subscription', 'Proposal', 'Review']}
               styles={{
                 input: {
-                  backgroundColor,
-                  fontSize,
+                  fontSize: '1rem',
                   option: {
                     color: '#000',
                     fontSize: '1rem',
                     fontWeight: 400,
                   },
                 },
-                label: { fontSize },
-                rightSection: { path: { fill: accentColor } },
+                label: { fontSize: '1rem' },
+                rightSection: { path: { fill: '#5072a5' } },
               }}
               {...commonProps}
             />
@@ -105,15 +100,15 @@ export default function ContactForm() {
               label="Your message"
               minRows={4}
               styles={{
-                input: { backgroundColor, fontSize },
-                label: { fontSize },
+                input: { fontSize: '1rem' },
+                label: { fontSize: '1rem' },
               }}
               {...commonProps}
             />
 
             <Rating size="lg" color="blue" />
 
-            <Button type="submit" color="gray" fz="1rem">
+            <Button type="submit" color="blue" fz="1rem">
               Submit
             </Button>
           </Flex>
