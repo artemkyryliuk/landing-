@@ -2,7 +2,9 @@ import { Box, Flex, Container, SimpleGrid, Stack } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 
 import Text from '../common/Text'
-import Title from '../common/TitleH3'
+
+import TitleH2 from '../common/TitleH2'
+import DescriptionText from '../common/DescriptionText'
 import Button from '../common/Button'
 import heroBg from '../../assets/images/hero-bg.jpg'
 import logo from '/src/assets/svg/logo.svg'
@@ -22,7 +24,6 @@ export default function Hero() {
         [theme.fn.smallerThan('sm')]: { backgroundSize: '400%' },
       })}
     >
-      <Box />
       <Flex
         justify="space-between"
         align="center"
@@ -57,18 +58,18 @@ export default function Hero() {
           </SimpleGrid>
         </Container>
 
-        <Container p={0} maw={450}>
-          <Title>
+        <Stack spacing={40} maw={450}>
+          <TitleH2>
             The only product design subscription to level up your UX + UI.
-          </Title>
+          </TitleH2>
 
-          <Text isDescription mt="1.2rem" mb="3.6rem">
+          <DescriptionText>
             For B2B, enterprise software and SaaS companies. Plus a bunch of
             goodies you won't find anywhere else.
-          </Text>
+          </DescriptionText>
 
           <Button href="#features"> Why we? </Button>
-        </Container>
+        </Stack>
       </Flex>
     </Box>
   )
