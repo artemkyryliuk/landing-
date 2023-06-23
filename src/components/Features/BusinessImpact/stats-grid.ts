@@ -1,4 +1,9 @@
-export const statsGrid = [
+export const statsGrid: {
+  stat: string
+  text: string
+  source: string
+  href: string
+}[] = [
   {
     stat: '228%',
     text: 'Design-centred companies beat the S&P500 by.',
