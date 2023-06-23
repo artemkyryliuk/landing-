@@ -7,7 +7,13 @@ import ct6 from '/src/assets/images/ct6.jpg'
 import ct7 from '/src/assets/images/ct7.jpg'
 import ct8 from '/src/assets/images/ct8.jpg'
 
-export const carouselData = [
+export const carouselData: {
+  img: string
+  label: string
+  text: string
+  href: string
+  source: string
+}[] = [
   {
     img: ct1,
     label: `Atominvest`,
