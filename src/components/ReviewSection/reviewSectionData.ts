@@ -7,7 +7,14 @@ import visaPhoto from '/src/assets/images/visa-photo.jpg'
 import ucsf from '/src/assets/svg/ucsf.svg'
 import ucsfPhoto from '/src/assets/images/ucsf-photo.jpg'
 
-export const reviewSectionData = [
+export const reviewSectionData: {
+  bg: string
+  logo: string
+  text: string
+  photo: string
+  author: string
+  career: string
+}[] = [
   {
     bg: '#151727',
     logo: ipsosLogo,
