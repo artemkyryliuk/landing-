@@ -3,7 +3,12 @@ import hiw2 from '/src/assets/images/hiw2.jpg'
 import hiw3 from '/src/assets/images/hiw3.jpg'
 import hiw4 from '/src/assets/images/hiw4.jpg'
 
-export const howItWorksData = [
+export const howItWorksData: {
+  img: string
+  title: string
+  text: string
+  items: string[]
+}[] = [
   {
     img: hiw1,
     title: `1. Choose your subscription`,
