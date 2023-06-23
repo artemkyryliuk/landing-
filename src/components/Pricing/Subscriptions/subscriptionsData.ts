@@ -2,7 +2,13 @@ import sub1 from '/src/assets/images/sub1.png'
 import sub2 from '/src/assets/images/sub2.png'
 import sub3 from '/src/assets/images/sub3.png'
 
-export const subscriptionsData = [
+export const subscriptionsData: {
+  img: string
+  name: string
+  description: string
+  items: string[]
+  price: number
+}[] = [
   {
     img: sub1,
     name: `Signal`,
