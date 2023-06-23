@@ -1,4 +1,4 @@
-export const faqsData = [
+export const faqsData: { question: string; answer: string[] }[] = [
   {
     question: `What makes you different?`,
     answer: [
