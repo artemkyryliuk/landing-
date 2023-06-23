@@ -1,6 +1,6 @@
 import { Box } from '@mantine/core'
 
-import Title from '../common/Title'
+import Title from '../common/TitleH3'
 import SectionTitle from '../common/SectionTitle'
 import ContactForm from './ContactForm'
 import contactBg from '/src/assets/images/contact-bg.jpg'

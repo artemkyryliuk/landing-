@@ -1,6 +1,6 @@
 import { Container } from '@mantine/core'
 
-import Title from '../../common/Title'
+import Title from '../../common/TitleH3'
 import Text from '../../common/Text'
 import StyledCarousel from './Carousel'
 

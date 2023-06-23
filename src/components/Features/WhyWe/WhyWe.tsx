@@ -1,10 +1,10 @@
 import { Flex, Image } from '@mantine/core'
 
-import AccentTitle from '../../common/AccentTitle'
 import FeatureItem from '../../common/FeatureItem'
 import StarIcon from './StarIcon'
 import bg from '/src/assets/images/feat.jpg'
 import { whyWe } from './why-we'
+import Title from '../../common/TitleH3'
 
 export default function WhyWe() {
   return (
@@ -20,9 +20,7 @@ export default function WhyWe() {
         maw="45%"
         sx={(theme) => ({ [theme.fn.smallerThan('md')]: { maxWidth: '100%' } })}
       >
-        <AccentTitle mb={50}>
-          We'll take care of the UX so you can grow faster.
-        </AccentTitle>
+        <Title> We'll take care of the UX so you can grow faster. </Title>
 
         {whyWe.map((item) => (
           <FeatureItem key={item} styled icon={<StarIcon />} text={item} />

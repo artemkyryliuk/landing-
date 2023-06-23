@@ -1,7 +1,7 @@
 import { Box } from '@mantine/core'
 
 import SectionTitle from '../common/SectionTitle'
-import Title from '../common/Title'
+import Title from '../common/TitleH3'
 import Accordion from './Accordion/Accordion'
 
 export default function Faqs() {

@@ -1,7 +1,7 @@
 import { Box } from '@mantine/core'
 
 import SectionTitle from '../common/SectionTitle'
-import Title from '../common/Title'
+import Title from '../common/TitleH3'
 import CardList from './CardList/CardList'
 
 export default function HowItWorks() {

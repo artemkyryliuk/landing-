@@ -1,6 +1,6 @@
 import { Container, SimpleGrid } from '@mantine/core'
 
-import Title from '../../common/Title'
+import Title from '../../common/TitleH3'
 import Text from '../../common/Text'
 import FeatureItem from '../../common/FeatureItem'
 import CheckIcon from '../../common/CheckIcon'

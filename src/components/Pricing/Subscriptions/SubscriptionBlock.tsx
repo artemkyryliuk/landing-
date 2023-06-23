@@ -1,6 +1,6 @@
 import { Box, Container, Flex, Text as MText } from '@mantine/core'
 
-import Title from '../../common/Title'
+import Title from '../../common/TitleH3'
 import FeatureItem from '../../common/FeatureItem'
 import CheckIcon from '../../common/CheckIcon'
 import Text from '../../common/Text'

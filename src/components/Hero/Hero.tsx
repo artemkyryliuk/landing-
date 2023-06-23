@@ -2,7 +2,7 @@ import { Box, Flex, Container, SimpleGrid, Stack } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 
 import Text from '../common/Text'
-import Title from '../common/Title'
+import Title from '../common/TitleH3'
 import Button from '../common/Button'
 import heroBg from '../../assets/images/hero-bg.jpg'
 import logo from '/src/assets/svg/logo.svg'

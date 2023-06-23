@@ -8,7 +8,7 @@ import {
   TextInput,
 } from '@mantine/core'
 
-import Title from '../common/Title'
+import Title from '../common/TitleH3'
 
 export default function ContactForm() {
   const commonProps = {

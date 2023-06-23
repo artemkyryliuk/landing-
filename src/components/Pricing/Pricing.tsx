@@ -1,7 +1,7 @@
 import { Box, Flex } from '@mantine/core'
 
 import SectionTitle from '../common/SectionTitle'
-import Title from '../common/Title'
+import Title from '../common/TitleH3'
 import Text from '../common/Text'
 import Subscriptions from './Subscriptions/Subscriptions'
 import stripe from '/src/assets/svg/stripe.svg'

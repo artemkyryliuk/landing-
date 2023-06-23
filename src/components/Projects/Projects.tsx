@@ -1,7 +1,7 @@
 import { Box } from '@mantine/core'
 
 import SectionTitle from '../common/SectionTitle'
-import Title from '../common/Title'
+import Title from '../common/TitleH3'
 import projectsBg1 from '../../assets/images/projects-bg1.jpg'
 import ProjectsGrid from './ProjectsGrid/ProjectsGrid'
 import projectsBg2 from '../../assets/images/projects-bg2.jpg'
